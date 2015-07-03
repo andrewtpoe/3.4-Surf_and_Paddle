@@ -1,0 +1,64 @@
+.aside {
+  position: relative;
+  display: block;
+  margin: 0px 10% 0px 10%;
+  width: 80%;
+  height: auto;
+}
+.aside__author {
+  margin: 0px 0px 20px 0px;
+  height: 200px;
+}
+.aside__authorPic {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translate(-50%);
+  max-height: 100px;
+  max-width: 100px;
+  border-radius: 50px;
+}
+.aside__imgOverlay {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translate(-50%);
+  height: 100px;
+  width: 100px;;
+  border-radius: 50px;
+  background-color: $blueTint;
+}
+.aside__authorName {
+  text-align: center;
+  position: absolute;
+  top: 130px;
+  width: 100%;
+  font-size: 24px;
+  color: $accentColor2;
+}
+.aside__authorSocialMedia {
+  position: absolute;
+  width: 100%;
+  top: 150px;
+  > ul {
+    text-align: center;
+    margin: 15px 0px 15px 0px;
+    > li {
+      display: inline-block;
+      margin: 0px 10px 0px 10px;
+      > a {
+        text-decoration: none;
+        font-size: 20px;
+        color: $subTextColor;
+      }
+    }
+  }
+}
+.aside__advert {
+  margin: 30px 0 30px 0;
+  text-align: right;
+  > a {
+    font-size: 18px;
+    color: $subTextColor;
+  }
+}

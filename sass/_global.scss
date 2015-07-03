@@ -1,0 +1,55 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html,
+body {
+  font-family: Helvetica;
+  font-size: 18px;
+  line-height: 27px;
+}
+body {
+  margin: 0;
+}
+
+.glob__fadeTint {
+  position: relative;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    background: $blueTint;
+    transition: all .3s linear;
+  }
+  &:hover:before {
+    background: none;
+  }
+  > img {
+    width: 100%;
+    height: auto;
+    max-height: 380px;
+    &:after {
+      height: 100%;
+      width: 100%;
+      background-color: $blueTint;
+    }
+  }
+  > h2 {
+    position: absolute;
+    max-width: 75%;
+    text-align: left;
+    bottom: 0px;
+    padding: 0px 20px 0px 20px;
+    color: #fff;
+    font-size: 32px;
+    text-shadow: 2px 2px #083451;
+  }
+}
