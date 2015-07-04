@@ -1,22 +1,49 @@
 .posts {
+  padding: 0 10% 0 10%;
+  margin-bottom: 30px;
   border-top: 1px solid $subTextColor;
+  font-size: 0px;
   text-align: center;
   > ul {
-    margin: 0px 10% 0px 10%;
+    margin: 0;
     padding: 0;
-    width: 80%;
     > li {
-      display: inline-block;
       width: 100%;
-      height: 380px;
-      overflow: hidden;
       margin: 10px 0px 10px 0px;
+      display: inline-block;
+      @media all and (min-width: $es-min) {
+        height: 350px;
+        padding: 0 10% 0 10%;
+      }
     }
   }
+  @media all and (min-width: $s-min) {
+    padding: 0;
+    margin-bottom: 0;
+    > ul {
+      display: inline;
+      width: 100%;
+      > li {
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        font-size: 0px;
+        width: 24%;
+        height: 300px;
+      }
+    }
+  }
+
 }
 .posts__sectionTitle {
-  margin: 20px 10% 20px 10%;
-  width: 80%;
   color: $accentColor1;
   font-size: 30px;
+  @media all and (min-width: $s-min) {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  @media all and (min-width: $m-min) {
+    font-size: 70px;
+    line-height: 80px;
+  }
 }

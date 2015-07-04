@@ -18,12 +18,16 @@ body {
 
 .glob__fadeTint {
   position: relative;
+  height: 300px;
+  @media all and (max-width: $s-min) {
+    height: 350px;
+  }
   &:before {
     content: "";
     display: block;
     position: absolute;
     top: 0;
-    bottom: 5px;
+    bottom: 0px;
     left: 0;
     right: 0;
     background: $blueTint;
@@ -34,8 +38,10 @@ body {
   }
   > img {
     width: 100%;
-    height: auto;
-    max-height: 380px;
+    height: 300px;
+    @media all and (max-width: $s-min) {
+      height: 350px;
+    }
     &:after {
       height: 100%;
       width: 100%;
@@ -52,4 +58,8 @@ body {
     font-size: 38px;
     text-shadow: 2px 2px #083451;
   }
+}
+.glob__mainContent {
+  margin: 0;
+  padding: 0;
 }

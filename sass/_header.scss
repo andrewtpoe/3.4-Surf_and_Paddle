@@ -6,6 +6,12 @@
   background-image: url('./images/Waves.jpg');
   background-position: center center;
   background-repeat: no-repeat;
+  @media all and (min-width: $s-min) {
+    height: 300px;
+  }
+  @media all and (min-width: $m-min) {
+    height: 350px;
+  }
 }
 .header__imgOverlay {
   position: absolute;
@@ -14,6 +20,13 @@
   background-color: $blueTint;
 }
 .header__topNav {
+  @media all and (min-width: $s-min) {
+    position: absolute;
+    right: 10%;
+  }
+  @media all and (min-width: $l-min) {
+    right: 15%;
+  }
   > ul {
     text-align: center;
     margin: 15px 0px 15px 0px;
@@ -30,13 +43,34 @@
   }
 }
 .header__logo {
+  height: 75px;
+  @media all and (min-width: $s-min) {
+    position: absolute;
+    left: 10%;
+    display: inline-block;
+  }
+  @media all and (min-width: $l-min) {
+    left: 15%;
+  }
   > img {
     position: relative;
     vertical-align: middle;
     left: 50%;
     transform: translate(-50%);
-    max-height: 75px;
+    height: 75px;
     width: auto;
+    @media all and (min-width: $s-min) {
+      position: relative;
+      left: 0;
+      transform: translate(0);
+    }
+  }
+  > .header__siteName {
+    display: none;
+    @media all and (min-width: $s-min) {
+      display: inline-block;
+      vertical-align: middle;
+    }
   }
 }
 .header__blogTitle {
@@ -45,9 +79,25 @@
   line-height: 75px;
   font-size: 45px;
   text-shadow: 2px 1px $accentColor1;
+  @media all and (min-width: $s-min) {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 75px;
+  }
+  @media all and (min-width: $m-min) {
+    font-size: 100px;
+  }
 }
 .header__blogSubtitle {
   text-align: center;
   color: $accentColor1;
   font-size: 20px;
+  @media all and (min-width: $s-min) {
+    position: relative;
+    top: 35%;
+  }
+  @media all and (min-width: $m-min) {
+    top: 40%;
+  }
 }
