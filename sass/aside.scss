@@ -22,35 +22,32 @@
   position: absolute;
   top: 15px;
   left: 50%;
-  transform: translate(-50%);
   max-height: 100px;
   max-width: 100px;
   border-radius: 50px;
+@include transform(-50%);
 }
 .aside__imgOverlay {
-  position: absolute;
   top: 15px;
   left: 50%;
-  transform: translate(-50%);
-  height: 100px;
-  width: 100px;;
   border-radius: 50px;
-  background-color: $blueTint;
+@include transform(-50%);
+@include tintOverlay(100px, 100px);
 }
 .aside__authorName {
   position: absolute;
   left: 50%;
-  transform: translate(-50%);
   top: 130px;
   font-size: 24px;
   color: $accentColor2;
+@include transform(-50%);
 }
 .aside__authorSocialMedia {
   position: absolute;
   left: 50%;
-  transform: translate(-50%);
   top: 165px;
   width: 250px;
+  @include transform(-50%);
   > ul {
     text-align: center;
     padding: 0;

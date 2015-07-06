@@ -15,7 +15,6 @@ body {
 body {
   margin: 0;
 }
-
 .glob__fadeTint {
   position: relative;
   height: 300px;
@@ -24,14 +23,8 @@ body {
   }
   &:before {
     content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0px;
-    left: 0;
-    right: 0;
-    background: $blueTint;
     transition: all .3s linear;
+  @include tintOverlay(100%, 100%);
   }
   &:hover:before {
     background: none;
@@ -43,9 +36,7 @@ body {
       height: 350px;
     }
     &:after {
-      height: 100%;
-      width: 100%;
-      background-color: $blueTint;
+      @include tintOverlay(100%, 100%);
     }
   }
   > h2 {

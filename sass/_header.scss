@@ -14,10 +14,7 @@
   }
 }
 .header__imgOverlay {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: $blueTint;
+  @include tintOverlay(100%, 100%);
 }
 .header__topNav {
   @media all and (min-width: $s-min) {
@@ -56,13 +53,13 @@
     position: relative;
     vertical-align: middle;
     left: 50%;
-    transform: translate(-50%);
     height: 75px;
     width: auto;
+    @include transform(-50%);
     @media all and (min-width: $s-min) {
       position: relative;
       left: 0;
-      transform: translate(0);
+      @include transform(0);
     }
   }
   > .header__siteName {
@@ -82,7 +79,7 @@
   @media all and (min-width: $s-min) {
     position: relative;
     top: 50%;
-    transform: translate(0, -50%);
+    @include transform(0, -50%);
     font-size: 75px;
   }
   @media all and (min-width: $m-min) {

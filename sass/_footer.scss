@@ -11,9 +11,12 @@
   @media all and (min-width: $m-min) {
     display: inline-block;
     position: absolute;
-    right: 5%;
+    right: 10%;
     top: 50%;
-    transform: translate(0, -50%);
+    @include transform(0, -50%);
+  }
+  @media all and (min-width: $l-min) {
+    right: 15%;
   }
   > ul {
     text-align: center;
@@ -33,15 +36,18 @@
   @media all and (min-width: $m-min) {
     display: inline-block;
     position: absolute;
-    left: 5%;
+    left: 10%;
     top: 50%;
-    transform: translate(0, -50%);
+    @include transform(0, -50%);
+  }
+  @media all and (min-width: $l-min) {
+    left: 15%;
   }
   > img {
     position: relative;
     vertical-align: middle;
     left: 50%;
-    transform: translate(-50%);
+    @include transform(-50%);
     max-height: 75px;
     width: auto;
   }
@@ -52,8 +58,11 @@
   @media all and (min-width: $m-min) {
     display: inline-block;
     position: absolute;
-    left: 12%;
+    left: 17%;
     top: 50%;
-    transform: translate(0, -50%);
+    @include transform(0, -50%);
+  }
+  @media all and (min-width: $l-min) {
+    left: 21%;
   }
 }
