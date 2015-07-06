@@ -273,7 +273,7 @@ body {
   position: absolute;
   left: 50%;
   top: 165px;
-  width: 250px;
+  width: 280px;
   -webkit-transform: translateX(-50%);
   -webkit-transform: translateY();
   transform: translateX(-50%);
