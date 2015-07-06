@@ -1,4 +1,4 @@
-.aside {
+.sec {
   position: relative;
   padding: 0px 10% 0px 10%;
   margin-bottom: 20px;
@@ -14,11 +14,11 @@
     width: 20%;
   }
 }
-.aside__author {
+.sec__author {
   margin: 0px 0px 20px 0px;
   height: 205px;
 }
-.aside__authorPic {
+.sec__authorPic {
   position: absolute;
   top: 15px;
   left: 50%;
@@ -27,14 +27,14 @@
   border-radius: 50px;
 @include transform(-50%);
 }
-.aside__imgOverlay {
+.sec__imgOverlay {
   top: 15px;
   left: 50%;
   border-radius: 50px;
 @include transform(-50%);
 @include tintOverlay(100px, 100px);
 }
-.aside__authorName {
+.sec__authorName {
   position: absolute;
   left: 50%;
   top: 130px;
@@ -42,7 +42,7 @@
   color: $accentColor2;
 @include transform(-50%);
 }
-.aside__authorSocialMedia {
+.sec__authorSocialMedia {
   position: absolute;
   left: 50%;
   top: 165px;
@@ -63,7 +63,7 @@
     }
   }
 }
-.aside__advert {
+.sec__advert {
   text-align: right;
   > ul {
     margin: 0;
@@ -87,13 +87,13 @@
     }
   }
 }
-.aside__aboutAd {
+.sec__aboutAd {
   font-size: 18px;
   color: $subTextColor;
   @media all and (min-width: $s-min) {
   }
 }
-.aside__section {
+.sec__section {
   display: none;
   @media all and (min-width: $m-min) {
     display: block;
@@ -102,7 +102,7 @@
       color: $accentColor1;
       font-size: 24px;
     }
-    > .aside__sectionContent {
+    > .sec__sectionContent {
       color: $subTextColor;
     }
   }

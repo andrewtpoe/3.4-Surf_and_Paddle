@@ -212,27 +212,27 @@ body {
     display: inline-block;
     vertical-align: middle; }
 
-.aside {
+.sec {
   position: relative;
   padding: 0px 10% 0px 10%;
   margin-bottom: 20px; }
   @media all and (min-width: 1080px) {
-    .aside {
+    .sec {
       display: inline-block;
       width: 25%;
       vertical-align: top;
       margin: 40px 10% 0 0;
       padding: 0; } }
   @media all and (min-width: 1350px) {
-    .aside {
+    .sec {
       margin-right: 15%;
       width: 20%; } }
 
-.aside__author {
+.sec__author {
   margin: 0px 0px 20px 0px;
   height: 205px; }
 
-.aside__authorPic {
+.sec__authorPic {
   position: absolute;
   top: 15px;
   left: 50%;
@@ -244,7 +244,7 @@ body {
   transform: translateX(-50%);
   transform: translateY(); }
 
-.aside__imgOverlay {
+.sec__imgOverlay {
   top: 15px;
   left: 50%;
   border-radius: 50px;
@@ -257,7 +257,7 @@ body {
   width: 100px;
   background-color: rgba(0, 100, 200, 0.6); }
 
-.aside__authorName {
+.sec__authorName {
   position: absolute;
   left: 50%;
   top: 130px;
@@ -268,7 +268,7 @@ body {
   transform: translateX(-50%);
   transform: translateY(); }
 
-.aside__authorSocialMedia {
+.sec__authorSocialMedia {
   position: absolute;
   left: 50%;
   top: 165px;
@@ -277,52 +277,52 @@ body {
   -webkit-transform: translateY();
   transform: translateX(-50%);
   transform: translateY(); }
-  .aside__authorSocialMedia > ul {
+  .sec__authorSocialMedia > ul {
     text-align: center;
     padding: 0;
     margin: 0; }
-    .aside__authorSocialMedia > ul > li {
+    .sec__authorSocialMedia > ul > li {
       display: inline-block;
       margin: 0px 10px 0px 10px; }
-      .aside__authorSocialMedia > ul > li > a {
+      .sec__authorSocialMedia > ul > li > a {
         text-decoration: none;
         font-size: 20px;
         color: #aab8c3; }
 
-.aside__advert {
+.sec__advert {
   text-align: right; }
-  .aside__advert > ul {
+  .sec__advert > ul {
     margin: 0;
     padding: 0; }
-    .aside__advert > ul > li {
+    .sec__advert > ul > li {
       display: inline-block;
       width: 100%;
       margin: 10px 0px 10px 0px; }
       @media all and (min-width: 480px) {
-        .aside__advert > ul > li {
+        .sec__advert > ul > li {
           height: 350px;
           padding: 0 10% 0 10%; } }
       @media all and (min-width: 768px) {
-        .aside__advert > ul > li {
+        .sec__advert > ul > li {
           padding: 0 20% 0 20%; } }
       @media all and (min-width: 1080px) {
-        .aside__advert > ul > li {
+        .sec__advert > ul > li {
           padding: 0 10% 0 10%; } }
 
-.aside__aboutAd {
+.sec__aboutAd {
   font-size: 18px;
   color: #aab8c3; }
 
-.aside__section {
+.sec__section {
   display: none; }
   @media all and (min-width: 1080px) {
-    .aside__section {
+    .sec__section {
       display: block;
       padding: 0 10% 0 10%; }
-      .aside__section > h2 {
+      .sec__section > h2 {
         color: #083451;
         font-size: 24px; }
-      .aside__section > .aside__sectionContent {
+      .sec__section > .sec__sectionContent {
         color: #aab8c3; } }
 
 .posts {
