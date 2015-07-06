@@ -262,6 +262,8 @@ body {
   position: absolute;
   left: 50%;
   top: 130px;
+  width: 280px;
+  text-align: center;
   font-size: 24px;
   color: #2b75b5;
   -webkit-transform: translateX(-50%);
